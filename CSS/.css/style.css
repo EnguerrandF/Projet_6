@@ -1,0 +1,300 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.top-movie button {
+  background: #DCD2D0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 3px rgba(225, 226, 239, 0.37);
+  padding: 8px 40px;
+  cursor: pointer;
+  color: black;
+  border: black;
+  font-size: 21px;
+  transition-property: background, color;
+  transition-duration: 0.5s;
+}
+.top-movie button:hover {
+  background-color: black;
+  color: #DCD2D0;
+}
+
+.category-three h1, .category-two h1, .category-one h1, .best-note-movies h1 {
+  margin: 15px 0px 15px 10px;
+}
+.category-three ul, .category-two ul, .category-one ul, .best-note-movies ul {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px 10px 0px;
+  width: 97vw;
+  overflow: hidden;
+}
+.category-three li, .category-two li, .category-one li, .best-note-movies li {
+  cursor: pointer;
+  height: auto;
+  padding: 0px 15px 0px 15px;
+  transition-property: transform, height;
+  transition-duration: 1s;
+}
+.category-three li a img, .category-two li a img, .category-one li a img, .best-note-movies li a img {
+  height: 500px;
+  transform-origin: center;
+  transition-property: height, transform;
+  transition-duration: 1s;
+}
+.category-three li a img:hover, .category-two li a img:hover, .category-one li a img:hover, .best-note-movies li a img:hover {
+  transform: scale(1.1);
+}
+
+.category-three .arrow, .category-two .arrow, .category-one .arrow, .best-note-movies .arrow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.category-three .arrow img, .category-two .arrow img, .category-one .arrow img, .best-note-movies .arrow img {
+  filter: invert(1);
+  height: 30%;
+  width: 50px;
+  margin: 0px 20px 0px 20px;
+}
+
+.category-three h2, .category-two h2, .category-one h2, .best-note-movies h2 {
+  margin: 20px 0px 0px 30px;
+  font-size: 52px;
+}
+
+body {
+  width: 86vw;
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 102, 122);
+  background: -moz-linear-gradient(0deg, rgb(0, 102, 122) 0%, rgb(0, 0, 0) 69%);
+  background: -webkit-linear-gradient(0deg, rgb(0, 102, 122) 0%, rgb(0, 0, 0) 69%);
+  background: linear-gradient(0deg, rgb(0, 102, 122) 0%, rgb(0, 0, 0) 69%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00667a",endColorstr="#000000",GradientType=1);
+}
+
+h1 {
+  font-family: "Balbek-Personnal";
+  color: whitesmoke;
+  font-size: 5.2em;
+}
+
+h2 {
+  font-family: "Balbek-Personnal";
+  color: whitesmoke;
+}
+
+p {
+  font-family: "Poppins-Light";
+}
+
+.top-movie {
+  height: 60vh;
+}
+.top-movie img {
+  height: 60vh;
+  width: 100vw;
+  object-fit: cover;
+}
+.top-movie h1 {
+  position: relative;
+  bottom: 331px;
+  left: 50px;
+  padding: 0 30px 0 0;
+  text-shadow: 7px 4px 7px rgb(0, 0, 0);
+}
+.top-movie h2 {
+  text-shadow: 7px 4px 7px rgb(0, 0, 0);
+  position: relative;
+  bottom: 288px;
+  left: 50px;
+  color: #d32b2b;
+  font-size: 2em;
+  padding: 10px 0px 10px 0px;
+}
+.top-movie p {
+  text-shadow: 7px 4px 7px rgb(0, 0, 0);
+  font-size: 20px;
+  position: relative;
+  height: auto;
+  width: 88vw;
+  bottom: 310px;
+  left: 50px;
+  color: whitesmoke;
+}
+.top-movie button {
+  margin: 0px 10px 0px 0px;
+  position: relative;
+  bottom: 280px;
+  left: 50px;
+}
+
+.best-note-movies {
+  width: 100vw;
+}
+.best-note-movies__block-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.category-one {
+  width: 100vw;
+}
+.category-one__block-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.category-two {
+  width: 100vw;
+}
+.category-two__block-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.category-three {
+  width: 100vw;
+}
+.category-three__block-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.open_infos_movies {
+  display: none;
+  background: black;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 0fr auto;
+  gap: 20x;
+}
+.open_infos_movies h2 {
+  font-size: 3.2em;
+}
+.open_infos_movies p {
+  font-size: 20px;
+  color: aliceblue;
+}
+.open_infos_movies img {
+  height: 600px;
+  width: auto;
+  grid-row: 2;
+  margin: 0 0 0 30px;
+}
+.open_infos_movies div {
+  grid-row: 2/3;
+  padding: 40px;
+  overflow: scroll;
+}
+.open_infos_movies div > * {
+  margin: 7px 0px 0px 0px;
+}
+.open_infos_movies img:nth-child(1) {
+  filter: invert(1);
+  height: 40px;
+  cursor: pointer;
+  margin: 20px 0px 20px 20px;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+@media screen and (max-width: 550px) {
+  .top-movie {
+    height: 96vh;
+  }
+  .top-movie img {
+    height: 100vh;
+  }
+  .top-movie h1 {
+    bottom: 460px;
+  }
+  .top-movie p {
+    bottom: 434px;
+  }
+  .top-movie h2 {
+    bottom: 433px;
+  }
+  .top-movie button {
+    bottom: 432px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .open_infos_movies {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: 0fr auto auto;
+    overflow: scroll;
+  }
+  .open_infos_movies img {
+    margin: 0 auto 0 auto;
+  }
+  .open_infos_movies div {
+    margin: 0 auto 0 auto;
+    grid-row: 3;
+    overflow: initial;
+  }
+}
+@font-face {
+  font-family: "Balbek-Personnal";
+  src: url("../base/police/Balbek-Personal Use Only.otf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../base/police/Poppins-Light.ttf");
+}
+
+/*# sourceMappingURL=style.css.map */

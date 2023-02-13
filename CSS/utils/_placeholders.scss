@@ -1,0 +1,66 @@
+%button {
+    background: #DCD2D0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 3px rgb(225 226 239 / 37%);
+    padding: 8px 40px;
+    cursor: pointer;
+    color: black;
+    border: black;
+    font-size: 21px;
+    transition-property: background, color;
+    transition-duration: 0.5s;
+    &:hover {
+        background-color: black;
+        color: #DCD2D0;
+    }
+}
+
+%list_movie {
+    h1 {
+        margin: 15px 0px 15px 10px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px 10px 0px;
+        width: 97vw;
+        overflow: hidden;
+    }
+    li {
+        cursor: pointer;
+        height: auto;
+        padding: 0px 15px 0px 15px;
+        transition-property: transform, height;
+        transition-duration: 1s;
+    }
+    li a img {
+        height: 500px;
+        transform-origin: center;
+        transition-property: height, transform;
+        transition-duration: 1s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+%arrow {
+    .arrow {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+            filter: invert(1);
+            height: 30%;
+            width: 50px;
+            margin: 0px 20px 0px 20px;
+        }
+    }
+}
+%title-list-film {
+    h2 {
+        margin: 20px 0px 0px 30px;
+        font-size: 52px;
+    }
+}

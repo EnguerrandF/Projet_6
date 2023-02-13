@@ -1,0 +1,13 @@
+@mixin h1-font-family{
+    font-family: "Balbek-Personnal";
+}
+@mixin box-shadow-texte {
+    text-shadow: 7px 4px 7px rgb(0 0 0);
+}
+@mixin block-list {
+    &__block-list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}

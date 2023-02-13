@@ -65,8 +65,12 @@ table {
   color: #DCD2D0;
 }
 
-.category-three h1, .category-two h1, .category-one h1, .best-note-movies h1 {
-  margin: 15px 0px 15px 10px;
+.category-three, .category-two, .category-one, .best-note-movies {
+  width: 99vw;
+}
+.category-three h2, .category-two h2, .category-one h2, .best-note-movies h2 {
+  margin: 20px 0px 0px 30px;
+  font-size: 52px;
 }
 .category-three ul, .category-two ul, .category-one ul, .best-note-movies ul {
   display: flex;
@@ -91,7 +95,6 @@ table {
 .category-three li a img:hover, .category-two li a img:hover, .category-one li a img:hover, .best-note-movies li a img:hover {
   transform: scale(1.1);
 }
-
 .category-three .arrow, .category-two .arrow, .category-one .arrow, .best-note-movies .arrow {
   display: flex;
   justify-content: space-around;
@@ -103,11 +106,6 @@ table {
   height: 30%;
   width: 50px;
   margin: 0px 20px 0px 20px;
-}
-
-.category-three h2, .category-two h2, .category-one h2, .best-note-movies h2 {
-  margin: 20px 0px 0px 30px;
-  font-size: 52px;
 }
 
 body {
@@ -141,7 +139,7 @@ p {
 }
 .top-movie img {
   height: 60vh;
-  width: 100vw;
+  width: 99vw;
   object-fit: cover;
 }
 .top-movie h1 {
@@ -177,36 +175,24 @@ p {
   left: 50px;
 }
 
-.best-note-movies {
-  width: 100vw;
-}
 .best-note-movies__block-list {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.category-one {
-  width: 100vw;
-}
 .category-one__block-list {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.category-two {
-  width: 100vw;
-}
 .category-two__block-list {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.category-three {
-  width: 100vw;
-}
 .category-three__block-list {
   display: flex;
   flex-direction: row;
@@ -222,6 +208,7 @@ p {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: 0fr auto;
   gap: 20x;
+  justify-content: space-evenly;
 }
 .open_infos_movies h2 {
   font-size: 3.2em;
@@ -240,6 +227,9 @@ p {
   grid-row: 2/3;
   padding: 40px;
   overflow: scroll;
+}
+.open_infos_movies div::-webkit-scrollbar {
+  display: none;
 }
 .open_infos_movies div > * {
   margin: 7px 0px 0px 0px;

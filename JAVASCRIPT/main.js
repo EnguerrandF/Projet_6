@@ -65,7 +65,7 @@ async function display_list_movie(url, id_ul, id_div, number_film){
     
     new_img_fleche_droite.setAttribute("src", './CSS/Image/angle-de-la-fleche-droite.png')
     new_img_fleche_droite.setAttribute("alt", 'fleche gauche')
-    new_a_fleche_droite.setAttribute("class", "arrow arrow--right")
+    new_a_fleche_droite.setAttribute("class", "arrow")
     new_a_fleche_droite.setAttribute("onclick", "move_list_movies('after', '" + id_ul + "')")
     
     new_a_fleche_droite.append(new_img_fleche_droite)

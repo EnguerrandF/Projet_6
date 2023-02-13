@@ -26,7 +26,7 @@ p {
     height: 60vh;
     img{
         height: 60vh;
-        width: 100vw;
+        width: 99vw;
         object-fit: cover;
     }
     h1 {
@@ -65,33 +65,22 @@ p {
 }
 
 .best-note-movies {
-    width: 100vw;
-    @extend %title-list-film;
     @extend %list_movie;
-    @extend %arrow;
     @include block-list;
 }
 .category-one{
-    width: 100vw;
-    @extend %title-list-film;
     @extend %list_movie;
-    @extend %arrow;
     @include block-list;
 }
 .category-two {
-    width: 100vw;
-    @extend %title-list-film;
     @extend %list_movie;
-    @extend %arrow;
     @include block-list;
 }
 .category-three {
-    width: 100vw;
-    @extend %title-list-film;
     @extend %list_movie;
-    @extend %arrow;
     @include block-list;
 }
+
 .open_infos_movies {
     display: none;
     background: black;
@@ -101,6 +90,7 @@ p {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: 0fr auto;
     gap: 20x;
+    justify-content: space-evenly;
     h2 {
         font-size: 3.2em;
     }
@@ -118,6 +108,9 @@ p {
         grid-row: 2 /3;
         padding: 40px;
         overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     div > * {
         margin: 7px 0px 0px 0px;
@@ -133,7 +126,6 @@ p {
 }
 
 @media screen and (max-width: 550px){
-
     .top-movie {
         height: 96vh;
         img {
@@ -153,6 +145,7 @@ p {
         }
     }
 }
+
 @media screen and (max-width: 770px){
     .open_infos_movies{
         grid-template-columns: repeat(1, auto);
@@ -161,9 +154,6 @@ p {
         
         img{
             margin: 0 auto 0 auto;
-        }
-        img:nth-child(1) {
-
         }
         div {
             margin: 0 auto 0 auto;

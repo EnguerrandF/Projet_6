@@ -16,8 +16,10 @@
 }
 
 %list_movie {
-    h1 {
-        margin: 15px 0px 15px 10px;
+    width: 99vw;
+    h2 {
+        margin: 20px 0px 0px 30px;
+        font-size: 52px;
     }
     ul {
         display: flex;
@@ -42,25 +44,17 @@
             transform: scale(1.1);
         }
     }
-}
-%arrow {
     .arrow {
         display: flex;
         justify-content: space-around;
         align-items: center;
         cursor: pointer;
-
+    
         img {
             filter: invert(1);
             height: 30%;
             width: 50px;
             margin: 0px 20px 0px 20px;
         }
-    }
-}
-%title-list-film {
-    h2 {
-        margin: 20px 0px 0px 30px;
-        font-size: 52px;
     }
 }

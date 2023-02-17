@@ -13,12 +13,15 @@ async function display_head_page(){
     
    let div_top_movies = document.getElementById("top-movie")
    let div_top_movies_child = div_top_movies.firstChild
+   let button = div_top_movies.querySelectorAll("button")
+   console.log(button);
    /* New balise */
    let img_movie = document.createElement("img")
    /* attribute balise */
    img_movie.setAttribute("class", "top-movie-img")
    img_movie.setAttribute("src", top_movie["image_url"])
    img_movie.setAttribute("alt", top_movie["title"])
+   button[1].setAttribute("onclick", "open_movie(" + id_top_movies + ")")
    /* insert */
    div_top_movies.insertBefore(img_movie, div_top_movies_child)
    /* H1 */

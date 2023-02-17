@@ -14,7 +14,7 @@ async function display_head_page(){
    let div_top_movies = document.getElementById("top-movie")
    let div_top_movies_child = div_top_movies.firstChild
    let button = div_top_movies.querySelectorAll("button")
-   console.log(button);
+
    /* New balise */
    let img_movie = document.createElement("img")
    /* attribute balise */
@@ -211,8 +211,6 @@ async function open_movie(id_film){
     create_element_long_description.appendChild(create_text_long_description)
     get_id_balise_text.appendChild(create_element_long_description, child_id_balise_text)
     
-    
-    console.log(request)
 }
 function close_windows(){
     let id_element_close = document.getElementById("open_infos_movies")

@@ -6,6 +6,12 @@ async function main(){
     display_list_movie("http://localhost:8000/api/v1/titles/?genre=Crime&sort_by=-imdb_score", "best-crime-movies__list-film", "category-three__block-list",  1);
 }
 
+async function request_api(url){
+    let response_api = await fetch(url);
+    let result = response_api.json();
+    return result
+}
+
 async function display_head_page(){
     let request_top_movies = await request_api("http://localhost:8000/api/v1/titles/?sort_by=-imdb_score")
     let id_top_movies = request_top_movies["results"]["0"]["id"]
@@ -36,11 +42,6 @@ async function display_head_page(){
    div_top_movies.insertBefore(p_description_top_movie, div_top_movies_child)
 }
 
-async function request_api(url){
-    let response_api = await fetch(url);
-    let result = response_api.json();
-    return result
-}
 
 async function display_list_movie(url, id_ul, id_div, number_film){
     let lien_html = document.getElementById(id_div)

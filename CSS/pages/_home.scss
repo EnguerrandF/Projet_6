@@ -21,6 +21,7 @@ h2 {
 p {
     font-family: "Poppins-Light";
 }
+
 header {
     display: flex;
     flex-direction: row;
@@ -110,7 +111,7 @@ header {
     height: 100vh;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: 0fr auto;
-    gap: 20x;
+    gap: 20px;
     justify-content: space-evenly;
     h2 {
         font-size: 3.2em;

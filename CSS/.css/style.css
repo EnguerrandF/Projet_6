@@ -230,7 +230,7 @@ header li {
   height: 100vh;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: 0fr auto;
-  gap: 20x;
+  gap: 20px;
   justify-content: space-evenly;
 }
 .open_infos_movies h2 {
